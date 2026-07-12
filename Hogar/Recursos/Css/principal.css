@@ -1,0 +1,5 @@
+/* principal.css concentra todos los css necesarios en uno solo para evitar aglomeración. */
+
+@import url("cuerpo.css");
+@import url("carrusel.css");
+@import url("componentes.css");
