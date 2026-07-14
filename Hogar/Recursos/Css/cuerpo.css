@@ -86,3 +86,7 @@ p code {
 .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu .item {
     color: rgba(255, 255, 255, 0.9) !important;
 }
+
+.ui.menu .item {
+    align-items: center;
+}
