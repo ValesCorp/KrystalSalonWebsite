@@ -1,0 +1,81 @@
+/* menu.css
+ *
+ * Estilos para el menú de navegación.
+ * Vales Corp 2026
+ */
+
+.item i.ui.icon {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#logo_menu {
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+#span_menu {
+    font-size: 16pt;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+#cortina_movil {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 15vh;
+}
+
+@media (max-width: 833px) {
+    #cortina_movil {
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 2em;
+        font-family: "SF Pro Display";
+    }
+
+    #cortina_movil .item {
+        line-height: 1.8;
+        padding-left: 15vw;
+    }
+
+    #cortina_movil .item a {
+        color: #ffffff;
+    }
+
+    #busqueda {
+        color: #ffffff;
+    }
+
+    #busqueda input {
+        color: #ffffff;
+        background-color: #000000;
+        border: none;
+        font-size: 18pt;
+    }
+
+    #busqueda input:focus {
+        border: none;
+        outline: none;
+    }
+
+    #busqueda input:not(:focus) {
+        border: none;
+        outline: none;
+    }
+
+    #busqueda .material-symbols-outlined {
+        color: #969696;
+        font-size: 24pt;
+    }
+
+    #cortina_buscar .item.titulo {
+        font-size: 15pt;
+        color: #969696;
+    }
+
+    #cortina_buscar .item {
+        font-size: 15pt;
+    }
+}

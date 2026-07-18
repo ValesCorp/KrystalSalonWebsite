@@ -5,6 +5,10 @@ body {
     background-color: #000000;
 }
 
+#contenedor_cuerpo {
+    z-index: 0;
+}
+
 .ui.inverted.segment {
     background-color: #777;
 }
@@ -48,45 +52,9 @@ p code {
     margin-right: 0.5rem;
 }
 
-.ui.tablet.computer.only.padded.grid {
+/* .ui.tablet.computer.only.padded.grid {
     position: absolute;
     z-index: 8;
     width: 100%;
     top: 1rem;
-}
-
-.ui.mobile.only.grid .ui.menu .ui.vertical.menu {
-    display: none;
-}
-
-.ui.mobile.only.grid .ui.vertical.menu .dropdown.icon {
-    float: unset;
-}
-
-.ui.mobile.only.grid .ui.vertical.menu .dropdown.icon:before {
-    content: "\f0d7";
-}
-
-.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
-    position: static;
-    width: 100%;
-    background-color: unset;
-    border: none;
-}
-
-.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item {
-    background-color: rgb(47, 47, 47);
-}
-
-.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
-    margin-top: 6px;
-}
-
-.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu .header,
-.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu .item {
-    color: rgba(255, 255, 255, 0.9) !important;
-}
-
-.ui.menu .item {
-    align-items: center;
-}
+} */
