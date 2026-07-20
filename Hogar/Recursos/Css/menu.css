@@ -27,6 +27,12 @@
     padding-top: 15vh;
 }
 
+/* Para ocultar los textos del menú derecho donde están las redes sociales */
+@media (max-width: 898px) {
+    .menu-texto {
+        display: none;
+    }
+}
 @media (max-width: 833px) {
     #cortina_movil {
         background-color: #000000;

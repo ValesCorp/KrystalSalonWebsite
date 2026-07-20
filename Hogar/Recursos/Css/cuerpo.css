@@ -1,4 +1,7 @@
-/* cuerpo.css estilos de estructura básicos de la página. Vales Corp */
+/* cuerpo.css
+ * estilos de estructura básicos de la página.
+ * Vales Corp julio 2026
+ */
 body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: grayscale;
@@ -58,3 +61,25 @@ p code {
     width: 100%;
     top: 1rem;
 } */
+
+/* Fuerza un tamaño uniforme a los contenedores de imagen */
+#eventos .column .ui.image {
+  width: auto !important;   /* tamaño fijo */
+  height: 35vh !important;
+  margin: 0 auto !important; /* centrar el contenedor */
+  overflow: hidden;          /* recorta lo que se salga */
+  border-radius: 50% !important; /* para mantener circular */
+}
+
+/* Ajusta la imagen dentro sin deformarla */
+#eventos .column .ui.image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;         /* recorta inteligentemente para llenar el círculo */
+  display: block;
+}
+
+#eventos .column h1 {
+    width: auto;
+    height: 9vh;
+}
