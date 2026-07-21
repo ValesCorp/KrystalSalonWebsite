@@ -383,9 +383,17 @@
     0 0 150px #a30705;
 }
 
+/* Tamaños de letra */
+
 .enorme {
  font-size: 5em !important;
 }
+
+.grande {
+    font-size: 3em !important;
+}
+
+/* Formato de texto */
 
 .derecha {
     text-align: right;

@@ -1,7 +1,4 @@
 /* carrusel.css estilos para el carrusel principal de fotos. Vales Corp */
-.cubierta {
-    background-color: #000000a1;
-}
 
 #lamina1, #lamina2, #lamina3 {
     background-size: cover;
@@ -23,6 +20,11 @@
     padding-top: 16rem;
     padding-bottom: 4rem;
     height: 600px;
+}
+
+.ui.text.container {
+    /*transform: translateY(180%);*/ /* Altura del texto del carrusel con respecto al tope de la página */
+    padding-top: 150px;
 }
 
 .slide .ui.text.container {
@@ -77,29 +79,73 @@
 
 .slide .ui.segment h1 {
     font-size: 3rem;
+    
 }
 
 .slide .ui.segment p {
     font-size: 1.5rem;
 }
 
+/*.contenedor.carrusel {*/
+/*    position: relative;      /* referencia para absolute hijos */*/
+/*    width: 100%;*/
+/*    min-height: 80vh;*/
+/*    overflow: hidden;*/
+/*}*/
+/**/
+/*.contenedor.imagen {*/
+/*    position: absolute;       /* sale del flujo, flota encima */*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, calc(-50% - 70px ));  /* centra perfecto sin adivinanzas */*/
+/*    z-index: 10;*/
+/*    display: flex;           /* si necesitas centrar algo dentro de este contenedor */*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    pointer-events: none;*/
+/*    padding-bottom: 8vh;*/
+/*}*/
+/**/
+/*.logo.carrusel {*/
+/*    width: 30vw;*/
+/*    padding: 0;*/
+/*    max-width: 100%;*/
+/*    height: auto;*/
+/*}*/
+
 .contenedor.carrusel {
-    position: relative;      /* referencia para absolute hijos */
+    position: relative;
     width: 100%;
     min-height: 80vh;
     overflow: hidden;
 }
 
 .contenedor.imagen {
-    position: absolute;       /* sale del flujo, flota encima */
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, calc(-50% - 70px ));  /* centra perfecto sin adivinanzas */
-      z-index: 10;
-      display: flex;           /* si necesitas centrar algo dentro de este contenedor */
-      justify-content: center;
-      align-items: center;
-      pointer-events: none;
+    position: absolute;
+    top: 33%; /*Altura del logo con respecto al tope de la página*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    /* No le pongas width: 100% aquí, lo controlamos en la imagen */
+    box-sizing: border-box;
+}
+
+.logo.carrusel {
+    height: 40vh;           /* altura fija en viewport units: siempre igual proporción */
+    width: auto;           /* ancho se ajusta solo para mantener proporción */
+    max-width: 90vw;       /* nunca más del 90% del ancho de pantalla */
+    display: block;
+    object-fit: contain;   /* no deforma, muestra la imagen completa */
+    margin: 0;             /* quita cualquier margen extra */
+}
+
+.contenedor.slide {
+    padding-bottom: 9vh;
+    margin-bottom: 4vh;
 }
 
 .cortinita.delicada {
@@ -113,22 +159,11 @@
     pointer-events: none;
 }
 
-.logo.carrusel {
-    width: 30vw;
-    padding: 0;
-    max-width: 100%;
-    height: auto;
-}
-
 .contenedor.slide h1, p {
     position: unset;
     z-index: 12;
     width: 100%;             /* importante: ocupa todo el ancho */
     box-sizing: border-box;
-}
-
-.ui.text.container {
-    transform: translateY(80%);
 }
 
 .ui.text.container h1 {
