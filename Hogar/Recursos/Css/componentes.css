@@ -70,21 +70,21 @@
 }
 
 .doradoespecial {
-    border: none;
-    border-radius: 40px;
-    background: linear-gradient(to right, #77530a, #ffd277, #77530a, #77530a, #ffd277, #77530a);
-    background-size: 250%;
-    background-position: left;
-    color: #ffd277;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition-duration: 1s;
-    overflow: hidden;
-    text-decoration: none;
-    user-select: none;
+    border: none !important;
+    border-radius: 40px !important;
+    background: linear-gradient(to right, #77530a, #ffd277, #77530a, #77530a, #ffd277, #77530a) !important;
+    background-size: 250% !important;
+    background-position: left !important;
+    color: #ffd277 !important;
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    transition-duration: 1s !important;
+    overflow: hidden !important;
+    text-decoration: none !important;
+    user-select: none !important;
 }
 
 .doradoespecial::before {
@@ -434,3 +434,62 @@
 
  .vertical-stripes { border: solid 1px red; background: repeating-linear-gradient( 90deg, #fff, #fff 20px, #000 20px, #000 40px); height: 200px; width: 200px; }
 
+.doradoSolido1 {
+    display: inline-block;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 100%;
+    padding: 13px 25px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+                0 3px 6px rgba(110, 80, 20, 0.4),
+                inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
+                inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+    background-image: linear-gradient(160deg,  #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    border: 1px solid #a55d07;
+    color: rgb(120, 50, 5);
+    text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-size: 100% 100%;
+    background-position: center;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    /*** full width block ***/
+    /* width: 100%; */
+}
+
+.doradoSolido1:focus,
+.doradoSolido1:hover {
+    background-size: 150% 150%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                0 6px 6px rgba(0, 0, 0, 0.23),
+                inset 0 -2px 5px 1px #b17d10,
+                inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+    border: 1px solid rgba(165, 93, 7, 0.6);
+    color: rgba(120, 50, 5, 0.8);
+}
+
+.doradoSolido1:active {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+                0 3px 6px rgba(110, 80, 20, 0.4),
+                inset 0 -2px 5px 1px #b17d10,
+                inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+}
+
+.doradoSolido1:disabled {
+    pointer-events: none;
+    opacity: .65;
+    color: #7e7e7e;
+    background: #dcdcdc;
+    box-shadow: none;
+    text-shadow: none;
+    border-color: #c2c2c2;
+}
+
+.doradoSolido1 a:link,
+.doradoSolido1 a:visited {
+  color: #000000 !important;
+}

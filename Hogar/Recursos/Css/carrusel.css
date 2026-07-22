@@ -2,6 +2,7 @@
 
 #lamina1, #lamina2, #lamina3 {
     background-size: cover;
+    padding-bottom: 35%;
 }
 
 #lamina1 {
@@ -24,7 +25,7 @@
 
 .ui.text.container {
     /*transform: translateY(180%);*/ /* Altura del texto del carrusel con respecto al tope de la página */
-    padding-top: 150px;
+    padding-top: 200px;
 }
 
 .slide .ui.text.container {
@@ -134,8 +135,27 @@
     box-sizing: border-box;
 }
 
+.botonp3 {
+    position: absolute;
+    top: 90%; /*Altura del logo con respecto al tope de la página*/
+    left: 50%;
+/*    padding-bottom: 10vw;*/ /*corregir la redondez del botón*/
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    /* No le pongas width: 100% aquí, lo controlamos en la imagen */
+    box-sizing: border-box;
+}
+
+/*.contenedor.boton.principal {*/
+/*    z-index: 10;*/
+/*}*/
+
 .logo.carrusel {
-    height: 40vh;           /* altura fija en viewport units: siempre igual proporción */
+    height: 30vh;           /* altura fija en viewport units: siempre igual proporción */
     width: auto;           /* ancho se ajusta solo para mantener proporción */
     max-width: 90vw;       /* nunca más del 90% del ancho de pantalla */
     display: block;
@@ -171,7 +191,7 @@
 }
 
 .ui.text.container p {
-    font-size: 14pt;
+    font-size: 20pt;
 }
 
 .ui.inverted.content {
