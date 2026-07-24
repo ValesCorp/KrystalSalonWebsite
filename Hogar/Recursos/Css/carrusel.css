@@ -135,19 +135,86 @@
     box-sizing: border-box;
 }
 
-.botonp3 {
+.doradoSolido1.ui.button {
+    display: inline-block;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 13px 25px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+                0 3px 6px rgba(110, 80, 20, 0.4), /* <- Esto es el brillo del botón, la sombra debajo */
+                inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
+                inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+    background-image: linear-gradient(160deg,  #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    border: 1px solid #a55d07;
+    color: rgb(120, 50, 5);
+    text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-size: 100% 100%;
+    background-position: center;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    /*** full width block ***/
+    /* width: 100%; */
+}
+
+.doradoSolido1.ui.button:focus,
+.doradoSolido1.ui.button:hover {
+    background-size: 150% 150%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                0 6px 6px rgba(0, 0, 0, 0.23),
+                inset 0 -2px 5px 1px #b17d10,
+                inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+    border: 1px solid rgba(165, 93, 7, 0.6);
+    color: rgba(120, 50, 5, 0.8);
+}
+
+.doradoSolido1.ui.button:active {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+                0 3px 6px rgba(110, 80, 20, 0.4),
+                inset 0 -2px 5px 1px #b17d10,
+                inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+}
+
+.doradoSolido1.ui.button:disabled {
+    pointer-events: none;
+    opacity: .65;
+    color: #7e7e7e;
+    background: #dcdcdc;
+    box-shadow: none;
+    text-shadow: none;
+    border-color: #c2c2c2;
+}
+
+.doradoSolido1.ui.button a:link,
+.doradoSolido1.ui.button a:visited {
+  color: #000000 !important;
+}
+
+
+.botonp3.ui.button { /*botón del carrusel, el unico que hay*/
     position: absolute;
     top: 90%; /*Altura del logo con respecto al tope de la página*/
     left: 50%;
-/*    padding-bottom: 10vw;*/ /*corregir la redondez del botón*/
+    border-radius: 50%;
     transform: translate(-50%, -50%);
-    z-index: 11;
+    z-index: 12;
     display: flex;
     justify-content: center;
     align-items: center;
-    pointer-events: none;
+/*    pointer-events: none;*/
     /* No le pongas width: 100% aquí, lo controlamos en la imagen */
     box-sizing: border-box;
+    width: 66px;
+    height: 66px;
+}
+
+.botonp3.ui.button .material-symbols-outlined {
+    font-size: 24pt;
+    font-weight: 1000;
 }
 
 /*.contenedor.boton.principal {*/
@@ -196,4 +263,64 @@
 
 .ui.inverted.content {
     color: #ffffff;
+}
+
+/* TODO: eliminar todo lo de .verde.metalico.ui.button parace que no se usa */
+.verde.metalico.ui.button {
+    display: inline-block;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 13px 25px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+                0 3px 6px rgba(0, 140, 140, 1),
+                inset 0 -2px 5px 1px rgba(18, 74, 19, 1),
+                inset 0 -1px 1px 3px rgba(61, 87, 61, 1);
+    background-image: linear-gradient(160deg,  #72f254, #65f847, #169a19, #4dfc3b, #4ffd3f);
+    border: 1px solid #176619;
+    color: rgb(228, 255, 228);
+    text-shadow: 0 2px 2px rgba(131, 242, 133, 1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-size: 100% 100%;
+    background-position: center;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    /*** full width block ***/
+    /* width: 100%; */
+}
+
+.verde.metalico.ui.button:focus,
+.verde.metalico.ui.button:hover {
+    background-size: 150% 150%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                0 6px 6px rgba(0, 0, 0, 0.23),
+                inset 0 -2px 5px 1px #0c780e,
+                inset 0 -1px 1px 3px rgba(146, 247, 148, 1);
+    border: 1px solid rgba(19, 92, 20, 0.6);
+    color: rgba(12, 64, 13, 0.8);
+}
+
+.verde.metalico.ui.button:active {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+                0 3px 6px rgba(20, 133, 22, 0.4),
+                inset 0 -2px 5px 1px #168718,
+                inset 0 -1px 1px 3px rgba(130, 237, 139, 1);
+}
+
+.verde.metalico.ui.button:disabled {
+    pointer-events: none;
+    opacity: .65;
+    color: #7e7e7e;
+    background: #dcdcdc;
+    box-shadow: none;
+    text-shadow: none;
+    border-color: #c2c2c2;
+}
+
+.verde.metalico.ui.button a:link,
+.verde.metalico.ui.button a:visited {
+  color: #000000 !important;
 }

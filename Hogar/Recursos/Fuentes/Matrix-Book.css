@@ -1,0 +1,11 @@
+/* Funcionando papá, sin ninguna mmda */
+@font-face {
+    font-family: "Matrix-Book";
+    src:
+        url("https://cdn.jsdelivr.net/gh/YamiVales/Matrix-Book@main/font/Matrix-Book.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/YamiVales/Matrix-Book@main/font/Matrix-Book.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}

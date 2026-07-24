@@ -1,0 +1,14 @@
+/* fuentes.css */
+/* Archivo CSS para fuentes del sitio web */
+
+/* Importaciones de los archivos CSS que contienen las fuentes a usar solo en este proyectp */
+@import: url("../Fuentes/Matrix-Book.css");
+@import: url("../Fuentes/SFProDisplay.css");
+
+* {
+    font-family: "SF Pro Display";
+}
+
+.ui.header {
+    font-family: "SF Pro Display";
+}

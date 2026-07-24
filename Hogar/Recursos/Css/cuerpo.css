@@ -35,9 +35,9 @@ body {
     background-color: black;
 }
 
-span.sub {
-    color: rgba(0, 0, 0, 0.6);
-}
+/*span.sub {*/
+/*    color: rgba(0, 0, 0, 0.6);*/
+/*}*/
 
 .ten.wide.column h1 {
     font-size: 3rem;
@@ -82,4 +82,21 @@ p code {
 #eventos .column h1 {
     width: auto;
     height: 9vh;
+}
+
+.texto {
+    font-size: 16pt;
+}
+
+.botones {
+    border-radius: 98px;
+}
+
+#eventos {
+    padding-bottom: 0;
+}
+
+.servicios.ui.image {
+    width: 70% !important;
+    height: auto !important;
 }

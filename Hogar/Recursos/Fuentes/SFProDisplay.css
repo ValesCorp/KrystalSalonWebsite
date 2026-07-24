@@ -1,0 +1,11 @@
+/* Listo para usar nada de mmdas */
+@font-face {
+    font-family: "SF Pro Display";
+    src:
+        url("https://cdn.jsdelivr.net/gh/YamiVales/SFProDisplay@main/font/normal/sfpro.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/YamiVales/SFProDisplay@main/font/normal/Matrix-Book.otf")
+            format("otf");
+    font-weight: normal;
+    font-style: normal;
+}
