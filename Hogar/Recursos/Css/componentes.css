@@ -38,17 +38,31 @@
     /*display: block;*/
     color: transparent;
     background: linear-gradient(
-        270deg,
-        #dfbd69,
-        #f7ef8a,
-        #ccaf20,
-        #d2ac47,
-        #edc967,
-        #dfbd69,
-        #ccaf20
-    );
+                    160deg,
+                    #a54e07,
+                    #b47e11,
+                    #fef1a2,
+                    #bc881b,
+                    #a54e07
+                );
     animation: gradiente 304s linear infinite;
     background-size: 60% 100%;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+
+.doradoEstatico {
+    /*display: block;*/
+    color: transparent;
+    background: linear-gradient(
+                    160deg,
+                    #a54e07,
+                    #b47e11,
+                    #fef1a2,
+                    #bc881b,
+                    #a54e07
+                );
+    background-size: 100% 100%;
     -webkit-background-clip: text;
     text-align: center;
 }
@@ -408,6 +422,10 @@
 
 .grande {
     font-size: 3em !important;
+}
+
+.xgrande {
+    font-size: 5em !important;
 }
 
 /* Formato de texto */

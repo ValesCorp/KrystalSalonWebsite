@@ -8,6 +8,10 @@ body {
     background-color: #000000;
 }
 
+.ui.footer {
+    background-color: #000000 !important;
+}
+
 #contenedor_cuerpo {
     z-index: 0;
 }
@@ -99,4 +103,12 @@ p code {
 .servicios.ui.image {
     width: 70% !important;
     height: auto !important;
+}
+
+.subtitulo {
+    font-size: 30pt;
+}
+
+.icono.como.imagen {
+    font-size: 10em;
 }
