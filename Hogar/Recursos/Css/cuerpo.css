@@ -112,3 +112,26 @@ p code {
 .icono.como.imagen {
     font-size: 10em;
 }
+
+.bocadito p {
+    font-size: 20pt;
+    font-style: underline;
+}
+
+.bocadito .material-symbols-outlined {
+    font-size: 1.5em;
+}
+
+/*.bocadito .material-symbols-outlined {*/
+/*    vertical-align: middle;*/
+/*}*/
+
+.bocadito .material-symbols-outlined {
+    /* opcional: tamaño del icono */
+    line-height: 1; /* evita que empuje el texto */
+    padding: 0;
+}
+
+.material-symbols-outlined {
+    vertical-align: -0.29em;
+}

@@ -13,4 +13,8 @@ $(document).ready(function() {
         dots: true,
         speed: 500
     });
+    
+    $('.ui.accordion')
+        .accordion()
+    ;
 });
