@@ -113,6 +113,10 @@ p code {
     font-size: 10em;
 }
 
+.icono.como.imagen.mediano {
+    font-size: 2em;
+}
+
 .bocadito p {
     font-size: 20pt;
     font-style: underline;

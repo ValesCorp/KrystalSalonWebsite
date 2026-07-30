@@ -246,7 +246,7 @@
     pointer-events: none;
 }
 
-.contenedor.slide h1, p {
+.contenedor.slide h1, .contenedor.slide p {
     position: unset;
     z-index: 12;
     width: 100%;             /* importante: ocupa todo el ancho */
