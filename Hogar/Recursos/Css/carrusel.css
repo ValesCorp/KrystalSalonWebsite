@@ -258,7 +258,7 @@
 }
 
 .ui.text.container p {
-    font-size: 20pt;
+    font-size: 1.5rem;
 }
 
 .ui.inverted.content {
@@ -324,3 +324,4 @@
 .verde.metalico.ui.button a:visited {
   color: #000000 !important;
 }
+

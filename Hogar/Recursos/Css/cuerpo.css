@@ -67,29 +67,28 @@ p code {
 } */
 
 /* Fuerza un tamaño uniforme a los contenedores de imagen */
-#eventos .column .ui.image {
-  width: auto !important;   /* tamaño fijo */
-  height: 35vh !important;
-  margin: 0 auto !important; /* centrar el contenedor */
-  overflow: hidden;          /* recorta lo que se salga */
-  border-radius: 50% !important; /* para mantener circular */
-}
+/*#eventos .column .ui.image {*/
+/*    width: 35vw !important;*/
+/*    height: 35vh !important;*/
+/*    margin: 0 auto !important;*/
+/*    overflow: hidden;*/
+/*    border-radius: 50% !important;*/
+/*}*/
 
 /* Ajusta la imagen dentro sin deformarla */
 #eventos .column .ui.image img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover;         /* recorta inteligentemente para llenar el círculo */
-  display: block;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;         /* recorta inteligentemente para llenar el círculo */
+    display: block;
 }
 
 #eventos .column h1 {
     width: auto;
-    height: 9vh;
 }
 
 .texto {
-    font-size: 16pt;
+    font-size: 1.5em;
 }
 
 .botones {
@@ -142,4 +141,18 @@ p code {
 
 #bocados h1 {
     padding-bottom: 10%;
+}
+
+/*#servicios_adicionales p {*/
+/*    padding-bottom: 20%;*/
+/*}*/
+
+@media (max-width: 833px) {
+    #eventos h1 {
+        font-size: 1.5rem;
+    }
+    
+    #bocados h1 {
+        font-size: 1.5rem;
+    }
 }
