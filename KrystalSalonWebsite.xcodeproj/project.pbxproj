@@ -23,12 +23,18 @@
 			path = Hogar;
 			sourceTree = "<group>";
 		};
+		57E19321301DADBF007B1DBA /* Depreciado */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Depreciado;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXGroup section */
 		57650662300F110D00EDA31D = {
 			isa = PBXGroup;
 			children = (
+				57E19321301DADBF007B1DBA /* Depreciado */,
 				57650669300F226D00EDA31D /* Documentación */,
 				57650682300F226D00EDA31D /* Hogar */,
 				57650683300F226D00EDA31D /* index.html */,

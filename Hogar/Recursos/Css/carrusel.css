@@ -10,7 +10,7 @@
 }
 
 #lamina2 {
-    background-image: url('../Img/Carrusel/2.webp') !important;
+    background-image: url('../Img/Carrusel/5.webp') !important;
 }
 
 #lamina3 {
@@ -221,13 +221,24 @@
 /*    z-index: 10;*/
 /*}*/
 
+/*.logo.carrusel {*/
+/*    height: 30vh;*/
+/*    width: auto;*/
+/*    max-width: 90vw;*/
+/*    display: block;*/
+/*    object-fit: contain;*/
+/*    margin: 0;*/
+/*}*/
+
 .logo.carrusel {
-    height: 30vh;           /* altura fija en viewport units: siempre igual proporción */
-    width: auto;           /* ancho se ajusta solo para mantener proporción */
-    max-width: 90vw;       /* nunca más del 90% del ancho de pantalla */
     display: block;
-    object-fit: contain;   /* no deforma, muestra la imagen completa */
-    margin: 0;             /* quita cualquier margen extra */
+    margin: 0;
+    width: auto;
+    height: 30vh;                 /* altura relativa a la ventana */
+    max-height: 85vh;             /* nunca más grande que 85% de la pantalla */
+    max-width: 90vw;              /* nunca más ancho que 90% del ancho */
+    object-fit: contain;          /* muestra la imagen completa sin deformar */
+    aspect-ratio: auto;           /* conserva la proporción original */
 }
 
 .contenedor.slide {

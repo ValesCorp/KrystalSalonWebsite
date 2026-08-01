@@ -8,11 +8,11 @@ $(document).ready(function() {
 
     $(".ui.dropdown").dropdown();
 
-    $(".slide").slick({
-        autoplay: true,
-        dots: true,
-        speed: 500
-    });
+//    $(".slide").slick({
+//        autoplay: true,
+//        dots: true,
+//        speed: 500
+//    });
     
     $('.ui.accordion')
         .accordion()
