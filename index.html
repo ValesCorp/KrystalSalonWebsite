@@ -15,6 +15,17 @@
         <link rel="stylesheet" href="./Hogar/Recursos/Css/principal.css"/>
         <link rel="stylesheet" href="./Hogar/Recursos/Css/slider.css"/>
         <link rel="stylesheet" href="./Hogar/Recursos/Css/carrusel.css"/>
+<!--        <script>-->
+<!--            mapkit.init({-->
+<!--                authorizationCallback: function(done) {-->
+<!--                    fetch('http://localhost:8080/token')-->
+<!--                        .then(res => res.text())-->
+<!--                        .then(token => done(token))-->
+<!--                        .catch(err => console.error('Token load failed', err));-->
+<!--                }-->
+<!--            });-->
+<!--            const map = new mapkit.Map("map");-->
+<!--        </script>-->
     </head>
     <body id="root">
         <!-- Inicia Cortina móvil -->
@@ -360,6 +371,9 @@
                                     ¿Dónde encontrarnos?
                                 </h1>
                             </div>
+                            <div class="column">
+                                <iframe src="https://embed.apple-mapkit.com/v1/embed?center=17.9675%2C-97.9344&cameraDistance=7491608.1947&annotations=%5B%7B%22place%22%3A%22IF05FF0D1AD8F20F9%22%7D%5D&language=es-MX&colorScheme=adaptive&token=eyJraWQiOiIyWDc1NUMyOTRGIiwidHlwIjoiSldUIiwiYWxnIjoiRVMyNTYifQ.eyJpc3MiOiJEWUtTUzg3OThUIiwiaWF0IjoxNzg1ODk0OTk4LCJvcmlnaW4iOiJ2YWxlc2NvcnAub3JnIiwic2NvcGUiOiJtYXBraXRfanMifQ.c2Q0qergaY-IqQDCA3X1H4mK9XeP2WKZgivBWapYbsFGLhHM_QhI_WwgkazCTd4LkbsmBw5HoBkTZJ5w6WGxbg" width="580" height="580" frameborder="0"></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -405,6 +419,7 @@
                 <!-- Inicia pié de página -->
             </div>
         </div>
+        <script src="https://cdn.apple-mapkit.com/mk/x/mapkit.core.js" crossorigin async data-callback="initMapKit" data-libraries="services,full-map,geojson" data-token="eyJraWQiOiIyWDc1NUMyOTRGIiwidHlwIjoiSldUIiwiYWxnIjoiRVMyNTYifQ.eyJpc3MiOiJEWUtTUzg3OThUIiwiaWF0IjoxNzg1ODk0OTk4LCJvcmlnaW4iOiJ2YWxlc2NvcnAub3JnIiwic2NvcGUiOiJtYXBraXRfanMifQ.c2Q0qergaY-IqQDCA3X1H4mK9XeP2WKZgivBWapYbsFGLhHM_QhI_WwgkazCTd4LkbsmBw5HoBkTZJ5w6WGxbg"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="./Hogar/Recursos/Librerías/semantic-ui/semantic.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
