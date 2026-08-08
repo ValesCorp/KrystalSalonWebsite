@@ -2,13 +2,14 @@
 /* Archivo CSS para fuentes del sitio web */
 
 /* Importaciones de los archivos CSS que contienen las fuentes a usar solo en este proyectp */
-@import: url("../Fuentes/Matrix-Book.css");
-@import: url("../Fuentes/SFProDisplay.css");
+/*@import: url("../Fuentes/Matrix-Book.css");*/
+/*@import: url("../Fuentes/SFProDisplay.css");*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+/*.ui.header {*/
+/*    font-family: "Cormorant Garamond", serif;*/
+/*}*/
 
 * {
-    font-family: "SF Pro Display";
-}
-
-.ui.header {
-    font-family: "SF Pro Display";
+    font-family: "Inter", sans-serif;
 }
