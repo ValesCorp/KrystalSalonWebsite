@@ -147,6 +147,15 @@ p code {
 /*    padding-bottom: 20%;*/
 /*}*/
 
+#bocados h1 {
+	font-size: 1.8rem;
+}
+
+#mapa {
+	width: 50vw;
+	height: 60vh;
+}
+
 @media (max-width: 833px) {
     #eventos h1 {
         font-size: 1.5rem;
@@ -155,8 +164,15 @@ p code {
     #bocados h1 {
         font-size: 1.5rem;
     }
+    
+    #mapa {
+		display: flex;
+		justify-content: center;
+    }
 }
 
 .parrafo {
   white-space: pre-line;
 }
+
+
