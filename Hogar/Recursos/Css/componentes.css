@@ -656,3 +656,8 @@
         transform: scale(1) /*translateY(0)*/;
     }
 }
+
+.logo.ui.image {
+    padding: 0;
+    margin: 0;
+}
