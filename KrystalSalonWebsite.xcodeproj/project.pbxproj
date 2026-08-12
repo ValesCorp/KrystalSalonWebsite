@@ -10,6 +10,7 @@
 		57650683300F226D00EDA31D /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		57650684300F226D00EDA31D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		57650685300F226D00EDA31D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		57ECEA20302C16A3001C65D5 /* CNAME */ = {isa = PBXFileReference; lastKnownFileType = text; path = CNAME; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,6 +39,7 @@
 				57650669300F226D00EDA31D /* Documentación */,
 				57650682300F226D00EDA31D /* Hogar */,
 				57650683300F226D00EDA31D /* index.html */,
+				57ECEA20302C16A3001C65D5 /* CNAME */,
 				57650684300F226D00EDA31D /* LICENSE */,
 				57650685300F226D00EDA31D /* README.md */,
 			);
