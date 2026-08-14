@@ -4,8 +4,7 @@
         <meta charset="utf-8" />
         <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <meta name="description" content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI."/>
+        <meta name="description" content="El mejor salón de eventos de toda Villahermosa."/>
         <meta name="keywords" content="Semantic-UI, Theme, Design, Template" />
         <meta name="author" content="Vales Corp"/>
         <meta name="theme-color" content="#ffffff" />
@@ -47,12 +46,12 @@
                     <a href="index.html" class="item">
                         <img class="logo ui image" width="15px" src="./Hogar/Recursos/Img/logosk.svg"/>
                     </a>
-                    <a href="#" class="item">
+                    <a id="a_servicios" class="item">
                         Servicios
                     </a>
-                    <a href="#" class="item">
-                        Contrataciones
-                    </a>
+<!--                    <a id="" href="#" class="item">-->
+<!--                        Contrataciones-->
+<!--                    </a>-->
                     <div class="right menu">
                         <a href="https://www.facebook.com/SalonKrystalVhsa" target="blank" class="item">
                             <i class="ui facebook blue icon"></i><span class="menu-texto">Facebook</apan>
@@ -96,7 +95,7 @@
                 <div class="ui container">
                     <!-- Este botón desplaza la página hacia el id="introducción"-->
                     <!-- TODO: hacer que el botón vaya hacia ese id, aún no hecho -->
-                    <a class="doradoSolido1 botonp3 ui button" href="#"><span class="material-symbols-outlined">arrow_downward</span></a>
+                    <a id="a_presentación" class="doradoSolido1 botonp3 ui button" href="#"><span class="material-symbols-outlined">arrow_downward</span></a>
                 </div>
                 <section id="container-slider">
                     <!-- <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="arrow circle left icon"></i></a>-->
@@ -152,7 +151,7 @@
                 </section>
             </div>
             <!-- Termina carrusel -->
-            <div class="ui hidden divider"></div>
+            <div id="presentación" class="ui hidden divider"></div>
             <div class="ui hidden divider"></div>
             <div class="ui container">
                 <div id="introducción" class="ui vertical segment">
@@ -225,6 +224,7 @@
                 <!-- Termina sección eventos -->
                 <div class="ui inverted divider"></div>
                 <!-- Empieza sección contamos con -->
+                <div id="servicios_sección" class="ui hidden divider"></div>
                 <div class="ui container">
                     <div id="introducción" class="ui vertical center aligned segment">
                         <h1 class="centrado grande ui inverted header">Lo extraordinario está aquí</h1>
@@ -374,7 +374,7 @@
                         </div>
                         <div class="column">
                             <iframe id="mapa" class="marco oro" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121449.28751994864!2d-93.09968363937253!3d17.965228992910152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd72ed4daeb93%3A0x2a4939ca6ecf1019!2sKrystal%20Sal%C3%B3n%20de%20Eventos%20en%20Villahermosa!5e0!3m2!1ses-419!2smx!4v1785993510342!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-                            <iframe src="https://embed.apple-mapkit.com/v1/embed?center=22.0924%2C-110.6844&cameraDistance=5035056.5703&annotations=%5B%7B%22place%22%3A%22IF05FF0D1AD8F20F9%22%7D%5D&language=es-MX&colorScheme=adaptive&token=eyJraWQiOiI1SldTNzI5NFFUIiwidHlwIjoiSldUIiwiYWxnIjoiRVMyNTYifQ.eyJpc3MiOiJEWUtTUzg3OThUIiwiaWF0IjoxNzg2MjUxOTMyLCJvcmlnaW4iOiJrcnlzdGFsc2Fsb24ubXgiLCJzY29wZSI6Im1hcGtpdF9qcyJ9.4FG9kDMakpx9M_s7vuSw11e49j2fdcDOnUODqc-hYdq3L7sptBzsSAdf2U1PNa071bUOWdXc50dUyHqx33iRrA" width="400" height="398" frameborder="0"></iframe>
+<!--                            <iframe src="https://embed.apple-mapkit.com/v1/embed?center=22.0924%2C-110.6844&cameraDistance=5035056.5703&annotations=%5B%7B%22place%22%3A%22IF05FF0D1AD8F20F9%22%7D%5D&language=es-MX&colorScheme=adaptive&token=eyJraWQiOiI1SldTNzI5NFFUIiwidHlwIjoiSldUIiwiYWxnIjoiRVMyNTYifQ.eyJpc3MiOiJEWUtTUzg3OThUIiwiaWF0IjoxNzg2MjUxOTMyLCJvcmlnaW4iOiJrcnlzdGFsc2Fsb24ubXgiLCJzY29wZSI6Im1hcGtpdF9qcyJ9.4FG9kDMakpx9M_s7vuSw11e49j2fdcDOnUODqc-hYdq3L7sptBzsSAdf2U1PNa071bUOWdXc50dUyHqx33iRrA" width="400" height="398" frameborder="0"></iframe>-->
                         </div>
                     </div>
                 </div>
@@ -423,12 +423,11 @@
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="./Hogar/Recursos/Librerías/semantic-ui/semantic.js"></script>
-        <script src="https://cdn.apple-mapkit.com/mk/6.0.0/mapkit.core.js" crossorigin async data-callback="initMapKit" data-libraries="services,full-map,geojson"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" defer></script>
-        <script src="./Hogar/Recursos/Librerías/liquidGL.js" defer></script>
+        <!-- <script src="https://cdn.apple-mapkit.com/mk/6.0.0/mapkit.core.js" crossorigin async data-callback="initMapKit" data-libraries="services,full-map,geojson"></script> -->
+        <!-- <script src="./Hogar/Recursos/Librerías/liquidGL.js" defer></script> -->
         <script src="./Hogar/Recursos/Js/principal.js"></script>
         <script src="./Hogar/Recursos/Js/menu.js"></script>
         <script src="./Hogar/Recursos/Js/slider.js"></script>
-        <script type="module" src="./Hogar/Recursos/Js/vidrioLiquido.js"></script>
+        <!-- <script type="module" src="./Hogar/Recursos/Js/vidrioLiquido.js"></script> -->
     </body>
 </html>

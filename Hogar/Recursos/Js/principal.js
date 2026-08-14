@@ -14,7 +14,23 @@ $(document).ready(function() {
 //        speed: 500
 //    });
     
-    $('.ui.accordion')
+    $(".ui.accordion")
         .accordion()
     ;
+    
+    $("#a_servicios").click(function(e) {
+        e.preventDefault(); // Evita acciones predeterminadas
+        // Recorrido suave hasta el elemento con id historia
+        $("html, body").animate({
+            scrollTop: $("#servicios_sección").offset().top
+        }, 2000);
+    });
+    
+    $("#a_presentación").click(function(e) {
+        e.preventDefault(); // Evita acciones predeterminadas
+        // Recorrido suave hasta el elemento con id historia
+        $("html, body").animate({
+            scrollTop: $("#presentación").offset().top
+        }, 2000);
+    });
 });

@@ -434,6 +434,20 @@
     text-align: right;
 }
 
+@media (max-width: 833px) {
+    .enorme {
+     font-size: 4rem !important;
+    }
+
+    .grande {
+        font-size: 2.5rem !important;
+    }
+
+    .xgrande {
+        font-size: 4rem !important;
+    }
+}
+
 .marco.plata {
     width: 300px;
     height: 250px;
