@@ -234,7 +234,7 @@
     display: block;
     margin: 0;
     width: auto;
-    height: 30vh;                 /* altura relativa a la ventana */
+    height: 60vh;                 /* altura relativa a la ventana */
     max-height: 85vh;             /* nunca más grande que 85% de la pantalla */
     max-width: 90vw;              /* nunca más ancho que 90% del ancho */
     object-fit: contain;          /* muestra la imagen completa sin deformar */
