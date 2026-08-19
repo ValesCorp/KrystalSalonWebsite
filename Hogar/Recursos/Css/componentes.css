@@ -593,8 +593,8 @@
 .verde.metalico {
     display: inline-block;
     outline: none;
-    font-size: 16px;
-    box-sizing: border-box;
+/*    font-size: 16px;*/
+/*    box-sizing: border-box;*/
     padding: 13px 25px;
     text-transform: uppercase;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
@@ -603,7 +603,7 @@
                 inset 0 -1px 1px 3px rgba(61, 87, 61, 1);
     background-image: linear-gradient(160deg,  #72f254, #65f847, #169a19, #4dfc3b, #4ffd3f);
     border: 1px solid #176619;
-    color: rgb(19, 69, 19);
+/*    color: rgb(19, 69, 19);*/
     text-shadow: 0 2px 2px rgba(131, 242, 133, 1);
     cursor: pointer;
     transition: all 0.2s ease-in-out;
