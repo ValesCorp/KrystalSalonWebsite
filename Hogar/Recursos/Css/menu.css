@@ -27,6 +27,13 @@
     padding-top: 15vh;
 }
 
+#tictax {
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 10px;
+    font-size: 12.5pt;
+}
+
 /* Para ocultar los textos del menú derecho donde están las redes sociales */
 @media (max-width: 1000px) {
     .menu-texto {
