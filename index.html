@@ -15,6 +15,13 @@
         <link rel="stylesheet" href="./Hogar/Recursos/Css/principal.css"/>
         <link rel="stylesheet" href="./Hogar/Recursos/Css/slider.css"/>
         <link rel="stylesheet" href="./Hogar/Recursos/Css/carrusel.css"/>
+        <link rel="stylesheet" href="./Hogar/Recursos/Css/galeria.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.lazyload.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.arrows.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.thumbs.css" />
+            
 <!--        <script>-->
 <!--            mapkit.init({-->
 <!--                authorizationCallback: function(done) {-->
@@ -225,6 +232,43 @@
                         </div>
                     </div>
                     <div class="ui hidden divider"></div>
+                    <div class="ui hidden divider"></div>
+                    <div class="ui divider"></div>
+                    <div class="ui hidden divider"></div>
+                    <div class="ui hidden divider"></div>
+                    <!-- Inicia galería de fotos -->
+                    <!--            Prueba-->
+                    <div class="ui container">
+                        <div class="ui vertical segment">
+                            <h1 class="grande negritas centrado ui inverted header">
+                                Vive otras experiencias.
+                            </h1>
+                            <div class="ui hidden divider"></div>
+                            <div class="ui hidden divider"></div>
+                            <p class="centrado texto blanco">
+                                Galería de fotos con los momentos más memorables que se han compartido en el Salón Krystal.
+                            </p>
+                        </div>
+                        <div class="f-carousel" id="myCarousel">
+                            <div class="f-carousel__slide" data-fancybox="gallery" data-src="https://lipsum.app/id/68/1920x1080" data-thumb-src="https://lipsum.app/id/68/1920x1080" >
+                                <img data-lazy-src="https://lipsum.app/id/68/1920x1080" width="1920" height="1080" alt="Image #1" />
+                            </div>
+                            <div class="f-carousel__slide" data-fancybox="gallery" data-src="https://lipsum.app/id/58/1920x1080" data-thumb-src="https://lipsum.app/id/58/1920x1080" >
+                                <img data-lazy-src="https://lipsum.app/id/58/1920x1080" width="1920" height="1080" alt="Image #2" />
+                            </div>
+                            <div class="f-carousel__slide" data-fancybox="gallery" data-src="https://lipsum.app/id/3/1920x1080" data-thumb-src="https://lipsum.app/id/3/1920x1080" >
+                                <img data-lazy-src="https://lipsum.app/id/3/1920x1080" width="1920" height="1080" alt="Image #3" />
+                            </div>
+                            <div class="f-carousel__slide" data-fancybox="gallery" data-src="https://lipsum.app/id/62/1920x1080" data-thumb-src="https://lipsum.app/id/62/1920x1080" >
+                                <img data-lazy-src="https://lipsum.app/id/62/1920x1080" width="1920" height="1080" alt="Image #4" />
+                            </div>
+                            <div class="f-carousel__slide" data-fancybox="gallery" data-src="https://lipsum.app/id/63/1920x1080" data-thumb-src="https://lipsum.app/id/63/1920x1080" >
+                                <img data-lazy-src="https://lipsum.app/id/63/1920x1080" width="1920" height="1080" alt="Image #5" />
+                            </div>
+                        </div>
+                    </div>
+                    <!--            Prueba-->
+                    <!-- Termina galería de fotos -->
                     <div id="introducción" class="ui vertical center aligned segment">
                         <h2 class="ui inverted header">¡¡Contacta con nosotros y descubre todas las posibilidades!!</h2>
                         <div class="ui hidden divider"></div>
@@ -438,6 +482,28 @@
         <script src="./Hogar/Recursos/Js/principal.js"></script>
         <script src="./Hogar/Recursos/Js/menu.js"></script>
         <script src="./Hogar/Recursos/Js/slider.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.umd.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.lazyload.umd.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.arrows.umd.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.thumbs.umd.js"></script>
+            <script>
+              Carousel(
+                document.getElementById("myCarousel"),
+                {
+                  // Your custom options
+                },
+                {
+                  Lazyload,
+                  Arrows,
+                  Thumbs,
+                }
+              ).init();
+
+              Fancybox.bind("[data-fancybox]", {
+                // Your custom options
+              });
+            </script>
         <!-- <script type="module" src="./Hogar/Recursos/Js/vidrioLiquido.js"></script> -->
     </body>
 </html>
