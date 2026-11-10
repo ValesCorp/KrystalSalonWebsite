@@ -236,7 +236,7 @@
                     <div class="ui divider"></div>
                     <div class="ui hidden divider"></div>
                     <div class="ui hidden divider"></div>
-                    <!-- Inicia galería de fotos -->
+                    <!-- Inicia seccion galería de fotos -->
                     <!--            Prueba-->
                     <div class="ui container">
                         <div class="ui vertical segment">
@@ -249,26 +249,63 @@
                                 Galería de fotos con los momentos más memorables que se han compartido en el Salón Krystal.
                             </p>
                         </div>
-                        <div class="f-carousel" id="myCarousel">
-                            <div class="f-carousel__slide" data-fancybox="gallery" data-src="https://lipsum.app/id/68/1920x1080" data-thumb-src="https://lipsum.app/id/68/1920x1080" >
-                                <img data-lazy-src="https://lipsum.app/id/68/1920x1080" width="1920" height="1080" alt="Image #1" />
-                            </div>
-                            <div class="f-carousel__slide" data-fancybox="gallery" data-src="https://lipsum.app/id/58/1920x1080" data-thumb-src="https://lipsum.app/id/58/1920x1080" >
-                                <img data-lazy-src="https://lipsum.app/id/58/1920x1080" width="1920" height="1080" alt="Image #2" />
-                            </div>
-                            <div class="f-carousel__slide" data-fancybox="gallery" data-src="https://lipsum.app/id/3/1920x1080" data-thumb-src="https://lipsum.app/id/3/1920x1080" >
-                                <img data-lazy-src="https://lipsum.app/id/3/1920x1080" width="1920" height="1080" alt="Image #3" />
-                            </div>
-                            <div class="f-carousel__slide" data-fancybox="gallery" data-src="https://lipsum.app/id/62/1920x1080" data-thumb-src="https://lipsum.app/id/62/1920x1080" >
-                                <img data-lazy-src="https://lipsum.app/id/62/1920x1080" width="1920" height="1080" alt="Image #4" />
-                            </div>
-                            <div class="f-carousel__slide" data-fancybox="gallery" data-src="https://lipsum.app/id/63/1920x1080" data-thumb-src="https://lipsum.app/id/63/1920x1080" >
-                                <img data-lazy-src="https://lipsum.app/id/63/1920x1080" width="1920" height="1080" alt="Image #5" />
+<!--                        Inicia galeria de fotos-->
+                        <div class="ui container">
+                            <div id="galeria" class="ui four column doubling grid">
+                                <!-- Fila 1 galeria-->
+                                <div class="row">
+                                    <div class="column">
+                                        <a href="./Hogar/Recursos/img/galeria/1.jpg" data-fancybox="gallery" >
+                                            <img src="./Hogar/Recursos/img/galeria/1.jpg" alt="Sample image #1" />
+                                        </a>
+                                    </div>
+                                    <div class="column">
+                                        <a href="./Hogar/Recursos/img/galeria/2.jpg" data-fancybox="gallery">
+                                            <img src="./Hogar/Recursos/img/galeria/2.jpg" alt="Sample image #2" />
+                                        </a>
+                                    </div>
+                                    <div class="column">
+                                        <a href="./Hogar/Recursos/img/galeria/3.jpg" data-fancybox="gallery">
+                                            <img src="./Hogar/Recursos/img/galeria/3.jpg" alt="Sample image #3" />
+                                        </a>
+                                    </div>
+                                    <div class="column">
+                                        <a href="./Hogar/Recursos/img/galeria/4.jpg" data-fancybox="gallery">
+                                            <img src="./Hogar/Recursos/img/galeria/4.jpg" alt="Sample image #3" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Fila 1 galeria-->
+                                <!-- Fila 2 galeria-->
+                                <div class="row">
+                                    <div class="column">
+                                        <a href="./Hogar/Recursos/img/galeria/5.jpg" data-fancybox="gallery" data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code" >
+                                            <img src="./Hogar/Recursos/img/galeria/5.jpg" alt="Sample image #1" />
+                                        </a>
+                                    </div>
+                                    <div class="column">
+                                        <a href="./Hogar/Recursos/img/galeria/6.jpg" data-fancybox="gallery">
+                                            <img src="./Hogar/Recursos/img/galeria/6.jpg" alt="Sample image #2" />
+                                        </a>
+                                    </div>
+                                    <div class="column">
+                                        <a href="./Hogar/Recursos/img/galeria/5.jpg" data-fancybox="gallery" data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code" >
+                                            <img src="./Hogar/Recursos/img/galeria/5.jpg" alt="Sample image #1" />
+                                        </a>
+                                    </div>
+                                    <div class="column">
+                                        <a href="./Hogar/Recursos/img/galeria/5.jpg" data-fancybox="gallery" data-caption="Optional caption,&lt;br /&gt;that can contain &lt;em&gt;HTML&lt;/em&gt; code" >
+                                            <img src="./Hogar/Recursos/img/galeria/5.jpg" alt="Sample image #1" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Fila 2 galeria-->
                             </div>
                         </div>
+<!--                        Termina galeria-->
                     </div>
                     <!--            Prueba-->
-                    <!-- Termina galería de fotos -->
+                    <!-- Termina seccion galería de fotos -->
                     <div id="introducción" class="ui vertical center aligned segment">
                         <h2 class="ui inverted header">¡¡Contacta con nosotros y descubre todas las posibilidades!!</h2>
                         <div class="ui hidden divider"></div>
@@ -488,17 +525,6 @@
             <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.arrows.umd.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.thumbs.umd.js"></script>
             <script>
-              Carousel(
-                document.getElementById("myCarousel"),
-                {
-                  // Your custom options
-                },
-                {
-                  Lazyload,
-                  Arrows,
-                  Thumbs,
-                }
-              ).init();
 
               Fancybox.bind("[data-fancybox]", {
                 // Your custom options
